@@ -1,8 +1,8 @@
 <a [routerLink]="['/']">
-  <h1>My Store</h1>
+  <img  src="https://media.altpress.com/uploads/2018/09/apple-logo.png" style="width:120px;">
 </a>
 
-<div class="grid-x grid-margin-x">
+<div class="grid-x grid-margin-x ">
 
   <!-- <div class="medium-6 large-3 cell">
     <button type="button"
@@ -13,8 +13,8 @@
       Toggle Off Canvas Left
     </button>
   </div> -->
-  
-  <div class="medium-6 large-3 cell">
+
+  <div class="medium-6 large-5 cell ">
     <button type="button"
 
       class="button fancy-button"
@@ -44,7 +44,7 @@
       Toggle Off Canvas Bottom
     </button>
   </div> -->
-  </div><!-- /grid -->
+</div><!-- /grid -->
 
 <!-- Position Left 
 <div [offcanvas]="isOffcanvas"
@@ -65,61 +65,55 @@
 </div> -->
 
 <!-- Position Right -->
-<div [offcanvas]="isOffcanvas"
-  class="off-canvas position-right"
-  id="offCanvasMenuRight"
-  aria-hidden="true"
+<div [offcanvas]="isOffcanvas" class="off-canvas position-right" id="offCanvasMenuRight" aria-hidden="true"
   #offcanvasRight="bs-offcanvas">
-  <h4>QCC</h4>
+  <h4 style="text-align:center;">QCC</h4>
   <ul class="menu vertical">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
+
       <a routerLink="/" class="button fancy-button">
-        <i class="material-icons">store</i>My Store
+        My Store
       </a>
 
     </li>
 
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
+
       <a routerLink="/cart" class="button fancy-button">
-        <i class="material-icons">shopping_cart</i>Checkout
+        Checkout
       </a>
-      
+
     </li>
 
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
+
       <a routerLink="/shipping" class="button fancy-button">
-        <i class="material-icons">local_shipping</i>Shipping
+        Shipping
       </a>
-      
+
     </li>
 
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
+
       <a routerLink="/graphic" class="button fancy-button">
-        <i class="material-icons">description</i>Graphic Design
+        Graphic Design
       </a>
-      
+
     </li>
 
-
-
-
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
+
       <a routerLink="/illustration" class="button fancy-button">
-        <i class="material-icons">description</i>Illustrations
+        Illustrations
       </a>
-      
+
     </li>
 
 
 
   </ul>
-  <button class="close-button" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasRight.hide()">
-    <span aria-hidden="true">×</span>
+  <button class="close-button aa" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasRight.hide()">
+    <span class="a" aria-hidden="true">×</span>
   </button>
 </div>
 
